@@ -1,0 +1,43 @@
+body{
+    background-color:beige;
+    margin: 5%;
+}
+
+h1{
+    text-align:center
+}
+
+.slogan{
+    text-align: center;
+    font-style: italic;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 20PX;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    border-radius: 20px;
+    border-width: 100%;
+  
+}
+
+a{
+     text-decoration: none;
+     
+}
+
+a:link{
+    color: navy;
+    font-weight: bold;
+}
+
+a:hover{
+    color: orange;
+}
+
+a:active {
+    color: orange;
+}
