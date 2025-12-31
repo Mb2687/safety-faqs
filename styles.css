@@ -3,7 +3,7 @@ body{
     margin: 5%;
 }
 
-h1{
+h1{ 
     text-align:center
 }
 
@@ -20,8 +20,6 @@ nav > ul{
     margin: 0;
     justify-content: center;
     border-radius: 20px;
-    border-width: 100%;
-  
 }
 
 a{
