@@ -1,41 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Source+Sans+3:wght@400;600&display=swap");
+
+:root{
+    --bg: beige;
+    --nav: coral;
+    --text: #1a1a1a;
+    --card: #fff6ea;
+    --border: rgba(0, 0, 0, 0.12);
+}
+
 body{
-    background-color:beige;
+    background-color: var(--bg);
+    color: var(--text);
     margin: 5%;
+    font-family: "Source Sans 3", "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.6;
 }
 
 h1{ 
-    text-align:center
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
 }
 
 .slogan{
     text-align: center;
     font-style: italic;
+    margin-top: 0;
+    color: #3a2f24;
 }
 
-nav > ul{
+header{
+    margin-top: 8px;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 10px 14px;
+    background-color: var(--nav);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.site-title{
+    margin: 0;
+    font-size: 1.15rem;
+    text-align: left;
+    white-space: nowrap;
+}
+
+nav{
+    margin-left: auto;
+}
+
+header,
+main{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+ul{
     list-style: none;
     display: flex;
-    gap: 20PX;
+    gap: 16px;
     padding: 0;
     margin: 0;
     justify-content: center;
-    border-radius: 20px;
 }
 
 a{
-     text-decoration: none;
-     
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 140ms ease, color 140ms ease;
 }
 
 a:link{
-    color: navy;
+    color: var(--bg);
     font-weight: bold;
 }
 
-a:hover{
-    color: orange;
+a:visited{
+    color: var(--bg);
+}
+
+a:hover,
+a:focus-visible{
+    background-color: var(--bg);
+    outline: 2px solid var(--border);
+    outline-offset: 2px;
+    color: var(--text);
 }
 
 a:active {
-    color: orange;
+    color: var(--text);
+}
+
+.intro-card{
+    margin: 48px auto 0;
+    max-width: 900px;
+    text-align: center;
+    background-color: var(--card);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 24px;
+}
+
+.intro{
+    margin: 0;
+    text-align: center;
+}
+
+.page-card{
+    margin: 48px auto 0;
+    max-width: 900px;
+    text-align: center;
+    background-color: var(--card);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 24px;
+}
+
+.page-title{
+    margin: 0 0 12px;
+}
+
+.page-note{
+    margin: 0;
+}
+
+@media (max-width: 900px){
+    body{
+        margin: 4%;
+    }
+
+    .top-bar{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav{
+        margin-left: 0;
+    }
+
+    ul{
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        margin: 3%;
+    }
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    .slogan{
+        font-size: 0.95rem;
+    }
+
+    ul{
+        padding: 8px;
+        justify-content: center;
+    }
+
+    a{
+        padding: 8px 10px;
+    }
+
+    .intro{
+        margin-top: 12%;
+        font-size: 0.98rem;
+    }
+}
+
+@media (max-width: 400px){
+    body{
+        margin: 2.5%;
+    }
+
+    h1{
+        font-size: 1.35rem;
+    }
+
+    ul{
+        gap: 8px;
+    }
+
+    a{
+        padding: 6px 8px;
+    }
 }
