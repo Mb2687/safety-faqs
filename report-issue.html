@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Glossary for Safety FAQs terms and definitions.">
+    <meta name="description" content="Placeholder description for reporting issues with Safety FAQs.">
+    <meta name="description" content="Report an error, outdated content, or missing source in Safety FAQs.">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="canonical" href="https://safety-faqs.com/glossary.html">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>Glossary | Safety FAQs</title>
+    <title>Report an Issue | Safety FAQs</title>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -59,20 +59,33 @@
 <main id="main-content">
     <article class="content">
         <header>
-            <h1 class="hero-title">Glossary</h1>
-            <p class="lede">Plain-language definitions with placeholders for citations.</p>
+            <h1 class="hero-title">Report an Issue</h1>
+            <p class="lede">Use this form to report errors, missing sources, or unclear guidance.</p>
         </header>
-        <section class="card">
-            <h2 class="section-title">A–Z Listing</h2>
-            <dl>
-                <dt>Placeholder term</dt>
-                <dd>Placeholder definition with citation reference.</dd>
-                <dt>Placeholder term</dt>
-                <dd>Placeholder definition with citation reference.</dd>
-                <dt>Placeholder term</dt>
-                <dd>Placeholder definition with citation reference.</dd>
-            </dl>
-        </section>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Issue Details</legend>
+
+                <label for="page-url">Page URL</label>
+                <input type="url" id="page-url" name="page-url" required placeholder="https://safety-faqs.com/...">
+
+                <label for="issue-type">Issue type</label>
+                <select id="issue-type" name="issue-type" required>
+                    <option value="" selected>Choose one</option>
+                    <option value="error">Error</option>
+                    <option value="outdated">Outdated</option>
+                    <option value="unclear">Unclear</option>
+                    <option value="missing-source">Missing source</option>
+                </select>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="6" required placeholder="Describe the issue and cite sources if available."></textarea>
+            </fieldset>
+
+            <p>Submissions are reviewed, but responses are not guaranteed.</p>
+            <button type="submit">Submit issue</button>
+        </form>
     </article>
 </main>
 
