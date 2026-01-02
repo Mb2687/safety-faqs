@@ -75,8 +75,9 @@ textarea:focus-visible{
     margin: 0 auto;
     padding: 16px;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .brand{
@@ -103,7 +104,8 @@ textarea:focus-visible{
 }
 
 nav{
-    margin-left: auto;
+    width: 100%;
+    margin-left: 0;
 }
 
 .nav-list{
@@ -114,6 +116,7 @@ nav{
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .nav-link,
@@ -298,6 +301,16 @@ main{
     padding: 0;
     display: grid;
     gap: 6px;
+}
+
+.fact-label{
+    font-weight: 700;
+}
+
+.keywords-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
 }
 
 .index-list a{
